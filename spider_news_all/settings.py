@@ -12,7 +12,7 @@ BOT_NAME = 'spider_news_all'
 
 SPIDER_MODULES = ['spider_news_all.spiders']
 NEWSPIDER_MODULE = 'spider_news_all.spiders'
-ITEM_PIPELINES = ['spider_news_all.pipelines.SpiderNewsAllPipeline']
+ITEM_PIPELINES = { 'spider_news_all.pipelines.SpiderNewsAllPipeline': 300 }
 
 LOG_LEVEL = 'INFO'
 # LOG_LEVEL = 'ERROR'
